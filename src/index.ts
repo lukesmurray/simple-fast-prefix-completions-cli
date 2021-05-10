@@ -33,7 +33,7 @@ class SimpleFastPrefixCompletionsCli extends Command {
   static args = [{name: 'file'}];
 
   async run() {
-    const {args, flags} = this.parse(SimpleFastPrefixCompletionsCli)
+    const {flags} = this.parse(SimpleFastPrefixCompletionsCli)
 
     const options: ConstructorParameters<typeof SimpleFastPrefixCompletions>[0] = {
 

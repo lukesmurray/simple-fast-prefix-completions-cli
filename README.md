@@ -1,5 +1,4 @@
-simple-fast-prefix-completions-cli
-==================================
+# simple-fast-prefix-completions-cli
 
 CLI interface for simple-fast-prefix-completions
 
@@ -8,25 +7,19 @@ CLI interface for simple-fast-prefix-completions
 [![Downloads/week](https://img.shields.io/npm/dw/simple-fast-prefix-completions-cli.svg)](https://npmjs.org/package/simple-fast-prefix-completions-cli)
 [![License](https://img.shields.io/npm/l/simple-fast-prefix-completions-cli.svg)](https://github.com/lukesmurray/simple-fast-prefix-completions-cli/blob/master/package.json)
 
-<!-- toc -->
-* [Usage](#usage)
-* [Commands](#commands)
-<!-- tocstop -->
-# Usage
-<!-- usage -->
+## Usage
+
 ```sh-session
 $ npm install -g simple-fast-prefix-completions-cli
-$ sfpc COMMAND
-running command...
-$ sfpc (-v|--version|version)
-simple-fast-prefix-completions-cli/0.0.1 darwin-x64 node-v15.14.0
-$ sfpc --help [COMMAND]
-USAGE
-  $ sfpc COMMAND
-...
-```
-<!-- usagestop -->
-# Commands
-<!-- commands -->
 
-<!-- commandsstop -->
+$ echo '["foo", "bar"]' | sfpc --words
+{"string":"\u0001bar\u0001foo\u0001","array":[0,4],"SEPARATOR":"\u0001"}
+
+$ sfpc (-v|--version|version)
+
+$ sfpc --help [COMMAND]
+```
+
+## Troubleshooting
+
+If `sfpc` freezes you probably have not passed input via stdin.
