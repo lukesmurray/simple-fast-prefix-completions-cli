@@ -72,7 +72,6 @@ class SimpleFastPrefixCompletionsCli extends Command {
     const completions = new SimpleFastPrefixCompletions(options)
 
     process.stdout.write(completions.toJSON())
-    this.exit()
   }
 }
 
