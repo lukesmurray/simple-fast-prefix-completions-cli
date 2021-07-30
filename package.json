@@ -1,7 +1,7 @@
 {
   "name": "simple-fast-prefix-completions-cli",
   "description": "CLI interface for simple-fast-prefix-completions",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Luke Murray @lukesmurray",
   "bin": {
     "sfpc": "./bin/run"
